@@ -1,0 +1,40 @@
+#+TITLE: Use org-lint to clean your org-mode files
+#+AUTHOR: Stephen
+#+DATE: 2015-08-11
+#+SEQ_TODO: TODO(t) STARTED(s) WAITING(w) DELEGATED(g) APPT(a) | DONE(d) DEFERRED(f) CANCELLED(c)
+#+HTML_DOCTYPE: html5
+#+OPTIONS: toc:nil   
+#+FILETAGS: org
+#+LATEX_CLASS: myfdparticle
+
+* Use org-lint to clean your org-mode files
+
+I organize my tasks with Emacs [[http://orgmode.org/][org-mode.]]
+As a side project, I have been working on parsing my org files to perform analytics.
+It would be possible to do this in Emacs lisp, but I would like to have flexibility to do this in [[https://github.com/digitalmentat/orgmode-parse/issues/13][Haskell]] or R.
+As part of this, I want to make sure that the my org-files are properly formatted.
+
+To do this, you can use [[http://thread.gmane.org/gmane.emacs.orgmode/96989][org-lint]].
+To get this running, you need to:
+
+1. Clone the org-mode git repository
+2. Switch to the =wp-lint= branch
+3. Build org-mode
+4. Start Emacs using this branch
+5. Open a =.org= file and use =M-x org-lint= to fix
+
+
+To do this:
+
+#+NAME: shell-cmds
+#+begin_src sh
+mkdir -p ~/emacs-dev
+cd ~/emacs-dev
+git clone orgmode@orgmode.org:org-mode.git
+git checkout wp-lint
+cd org-mode
+make
+emacs -Q -L lisp/
+#+end_src
+
+

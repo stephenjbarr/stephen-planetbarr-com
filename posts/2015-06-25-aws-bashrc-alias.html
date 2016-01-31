@@ -1,0 +1,23 @@
+<p>
+If you use <a href="http://aws.amazon.com/">AWS</a>, you have probably run into the <a href="http://aws.amazon.com/cli/">AWS CLI</a> which gives the user the ability to control the various web services from the command line.
+When using AWS CLI, it is nice to have different profiles for different projects, clients, and other logical separations that you may want to enfroce.
+The way to do this is with <a href="http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-multiple-profiles">Named Profiles</a>, which allow you to have different access keys and use different regions.
+To use the profile, you need to to append <code>--profile myprofilename</code> to the end of each aws command.
+This gets tedious, and a good fix for this is <a href="http://tldp.org/LDP/abs/html/aliases.html">bash aliases</a>.
+</p>
+
+<p>
+In your <code>.bashrc</code> file (at the root of your home directory in Linux and probably OSX), you can add the following:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh"><span style="color: #006FE0;">alias</span> <span style="color: #BA36A5;">awsth</span>=<span style="color: #008000;">'aws --profile=th'</span>
+<span style="color: #006FE0;">alias</span> <span style="color: #BA36A5;">awslp</span>=<span style="color: #008000;">'aws --profile=sjblaptop'</span>
+<span style="color: #006FE0;">alias</span> <span style="color: #BA36A5;">awsai</span>=<span style="color: #008000;">'aws --profile=sjbai1'</span>
+</pre>
+</div>
+
+<p>
+Then, rather than using <code>aws --profile=sjblaptop s3 cp...</code>, I can use <code>awslp s3 ...</code>.
+</p>

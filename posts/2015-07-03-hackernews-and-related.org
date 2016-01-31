@@ -1,0 +1,13 @@
+#+TITLE: Hacker News and Related
+#+AUTHOR: Stephen
+#+DATE: 2015-06-25
+#+SEQ_TODO: TODO(t) STARTED(s) WAITING(w) DELEGATED(g) APPT(a) | DONE(d) DEFERRED(f) CANCELLED(c)
+#+HTML_DOCTYPE: html5
+#+OPTIONS: toc:nil   
+#+FILETAGS: api python ipython
+#+LATEX_CLASS: myfdparticle
+
+I like [[https://news.ycombinator.com/][Hacker News]]. 
+It is worth checking to keep up with startups and things that are interesting to that community.
+Today there is a new website, [[http://news.startup.ml/][Deep Learning News]], as mentioned by this [[http://venturebeat.com/2015/06/30/of-course-there-is-now-a-hacker-news-for-deep-learning/][VentureBeat article]].
+There is also a [[http://www.datatau.com/][Data News]].

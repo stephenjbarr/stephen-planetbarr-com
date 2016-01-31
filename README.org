@@ -28,14 +28,17 @@
   2. Write it in [[https://github.com/stephenjbarr/stephen-planetbarr-com/tree/master/posts][posts/]] directory. Name the file =YYYY-MM-DD-some-words.ext=.
   3. How to export:
      1. If written in org-mode:
-	1. Export to html
-	2. Create =.metadata= file with title and date
+	1. Export to html, body only =C-c C-e C-b h h=.
+	2. Create =.metadata= file with title and date.
      2. If written in Markdown:
 	1. It will be exported automatically.
   4. Add media:
      1. =images/=
      2. =video/=
 
+** TODO Add metadata maker
+
+** TODO Document relative reference of images
 
 * Author
   

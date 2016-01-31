@@ -1,0 +1,25 @@
+#+TITLE: AWS CLI - Make an alias for different configurations
+#+AUTHOR: Stephen
+#+DATE: 2015-06-23
+#+SEQ_TODO: TODO(t) STARTED(s) WAITING(w) DELEGATED(g) APPT(a) | DONE(d) DEFERRED(f) CANCELLED(c)
+#+HTML_DOCTYPE: html5
+#+OPTIONS: toc:nil   
+#+FILETAGS: aws tools
+#+LATEX_CLASS: myfdparticle
+
+
+If you use [[http://aws.amazon.com/][AWS]], you have probably run into the [[http://aws.amazon.com/cli/][AWS CLI]] which gives the user the ability to control the various web services from the command line.
+When using AWS CLI, it is nice to have different profiles for different projects, clients, and other logical separations that you may want to enfroce.
+The way to do this is with [[http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-multiple-profiles][Named Profiles]], which allow you to have different access keys and use different regions.
+To use the profile, you need to to append =--profile myprofilename= to the end of each aws command.
+This gets tedious, and a good fix for this is [[http://tldp.org/LDP/abs/html/aliases.html][bash aliases]].
+
+In your =.bashrc= file (at the root of your home directory in Linux and probably OSX), you can add the following:
+
+#+begin_src sh 
+alias awsth='aws --profile=th'
+alias awslp='aws --profile=sjblaptop'
+alias awsai='aws --profile=sjbai1'
+#+end_src
+
+Then, rather than using =aws --profile=sjblaptop s3 cp...=, I can use =awslp s3 ...=.

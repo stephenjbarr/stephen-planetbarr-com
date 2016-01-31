@@ -1,0 +1,5 @@
+title: AWS CLI - Make an alias for different configurations
+date: 2015-06-23
+tags: aws, tools
+description: Using bash alias to make simplify AWS CLI profile usage.
+

@@ -1,0 +1,22 @@
+#+TITLE: Update for the end of January
+#+AUTHOR: Stephen
+#+DATE: 2016-01-30
+#+SEQ_TODO: TODO(t) STARTED(s) WAITING(w) DELEGATED(g) APPT(a) | DONE(d) DEFERRED(f) CANCELLED(c)
+#+HTML_DOCTYPE: html5
+#+OPTIONS: toc:nil   
+#+FILETAGS: srl
+#+LATEX_CLASS: myfdparticle
+
+* A General Update
+
+This post is going to be a bit of a brain dump.
+For the last 2-3 months, I have been working on a study of statistical relational learning.
+A good review of the subject can be [[http://www.cs.umd.edu/srl-book/][seen in the book by the same name]].
+The book is organized to show progress of the field from logic based solvers to probabilistic constructs such as Markov logic networks (MLNs).
+
+
+* Probabilistic Soft Logic
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GhBHRhIsQIE" frameborder="0" allowfullscreen></iframe>
+

@@ -1,0 +1,18 @@
+#+TITLE: Another Org
+#+AUTHOR: Stephen
+#+DATE: 2015-06-23
+#+SEQ_TODO: TODO(t) STARTED(s) WAITING(w) DELEGATED(g) APPT(a) | DONE(d) DEFERRED(f) CANCELLED(c)
+#+HTML_DOCTYPE: html5
+#+OPTIONS: toc:nil   
+#+FILETAGS: blog org-mode hakyll haskell bootstrap howto
+#+LATEX_CLASS: myfdparticle
+
+* Here is a test post
+  Some content!
+
+   #+begin_src haskell
+let x = [1..10]
+   #+end_src
+
+* Some math
+  $x^{2}$.

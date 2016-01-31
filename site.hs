@@ -256,8 +256,8 @@ feedCtx = mconcat
 --------------------------------------------------------------------------------
 config :: Configuration
 config = defaultConfiguration
-    { deployCommand = "aws --profile=sjbai1 s3 sync  /home/stevejb/Blog/stephen-barr-hakyll-bootstap-blog/_site/ \
-                       \s3://stephen-staging.barr-ai.labs.com --acl public-read "
+    { deployCommand = "aws --profile=sjbai1 s3 sync  /home/stevejb/Blog/stephen-planetbarr-com/_site/ \
+                       \s3://stephen.planetbarr.com --acl public-read "
     }
     -- The line style here is a "multiline literal":
     -- http://book.realworldhaskell.org/read/characters-strings-and-escaping-rules.html.

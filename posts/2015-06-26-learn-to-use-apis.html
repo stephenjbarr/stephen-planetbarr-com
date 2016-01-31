@@ -1,0 +1,93 @@
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> APIs</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+If you are an academic, it is easy to put yourself live in a world all
+data comes as nice clean <code>.csv</code> files, generated from curated,
+expensive databases.
+</p>
+
+<p>
+My strong piece of advice is <b>learn to use APIs!</b> That is where the
+fun data live, and this is how you can connect data and ideas from
+everywhere and do new things with them.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Example using Python</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+As a quick example, I present an some extremely simple code to call
+Duck Duck Go's API.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">import requests
+import json
+from IPython.display import Image
+
+payload =  {<span style="color: #8b2252;">"q"</span> : <span style="color: #8b2252;">"BBQ"</span>,
+           <span style="color: #8b2252;">"format"</span> : <span style="color: #8b2252;">"json"</span>,
+           <span style="color: #8b2252;">"pretty"</span> : 1}
+
+r = requests.get(<span style="color: #8b2252;">'http://api.duckduckgo.com/'</span>, params = payload)
+r.url
+rj = r.json()
+<span style="color: #0000ff;">Image</span>(<span style="color: #a0522d;">url</span>=rj[<span style="color: #8b2252;">'Image'</span>])
+</pre>
+</div>
+
+
+<p>
+You can also view the code in <a href="http://nbviewer.ipython.org/gist/stephenjbarr/234b609ca63575c55196">this iPython notebook</a>.
+</p>
+
+<p>
+The code has the following structure:
+</p>
+
+<ol class="org-ol">
+<li>Lines 1-3 load modules useful for making the request, and displaying the image.
+</li>
+<li><code>payload</code> is a JSON structure encapsulating the what we want to ask.
+</li>
+<li>The <code>requests.get</code> command reaches out to Duck Duck Go's API endpoint, hands it the payload, and gets the response.
+</li>
+<li><code>r.url</code> shows how the payload was encoded.
+</li>
+<li><code>r.json()</code> takes the answer and transformsit into a JSON structure.
+</li>
+<li>The <code>Image</code> command displays within an iPython notebook an image given a URL.
+</li>
+</ol>
+
+<p>
+I highly suggest going to the notebook and try modifying the <code>q</code> object of the payload.
+In fact, download the notebook, <a href="http://ipython.org/install.html">install iPython</a>, and play with it yourself.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Reflect</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+In a few simple lines of code, we have transformed a text string into an image.
+In Haskell / ML notation, we have a function of type:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-haskell"><span style="color: #0000ff;">get_image</span> <span style="color: #a0522d;">::</span> <span style="color: #228b22;">String</span> <span style="color: #a0522d;">-&gt;</span> <span style="color: #228b22;">Picture</span>
+</pre>
+</div>
+
+<p>
+This was done with almost no work on our part!
+</p>
+</div>
+</div>

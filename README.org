@@ -1,0 +1,41 @@
+#+TITLE: Stephen Barr - 2016 Blog Reboot
+#+AUTHOR: Stephen J. Barr
+
+
+* Setup
+
+  1. This blog is powered by [[https://jaspervdj.be/hakyll/][Hakyll]].
+  2. Documents are authored in Emacs [[http://orgmode.org/][org-mode]] or [[https://daringfireball.net/projects/markdown/][Markdown]].
+
+
+** Getting started
+
+
+   #+begin_src sh
+   stack new stephen-planetbarr-com hakyll-template
+   #+end_src
+
+** Changes from base template
+
+   1. Initial commit of [[https://github.com/stephenjbarr/stephen-planetbarr-com/commit/11e5ff6f0a464cc29f753ec990e205e1190ec290/site.hs][site.hs]].
+   2. 
+
+* Steps to make a post
+
+  1. Have something interesting to write.
+  2. Write it in [[https://github.com/stephenjbarr/stephen-planetbarr-com/tree/master/posts][posts/]] directory. Name the file =YYYY-MM-DD-some-words.ext=.
+  3. How to export:
+     1. If written in org-mode:
+	1. Export to html
+	2. Create =.metadata= file with title and date
+     2. If written in Markdown:
+	1. It will be exported automatically.
+  4. Add media:
+     1. =images/=
+     2. =video/=
+
+
+* Author
+  
+  If there is not a post written within 1 week of right now, there should be.
+

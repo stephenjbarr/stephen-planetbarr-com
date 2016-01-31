@@ -18,7 +18,9 @@
 ** Changes from base template
 
    1. Initial commit of [[https://github.com/stephenjbarr/stephen-planetbarr-com/commit/11e5ff6f0a464cc29f753ec990e205e1190ec290/site.hs][site.hs]].
-   2. 
+   2. Adding 2015 configurations.
+
+*** TODO Add detailed explanation of all of this.
 
 * Steps to make a post
 

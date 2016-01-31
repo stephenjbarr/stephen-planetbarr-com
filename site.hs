@@ -7,7 +7,9 @@ import           Hakyll
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
-    match "images/*" $ do
+    match  ("images/*.jpg" .||. "images/*.png" .||. "images/*.gif" .||.
+            "favicon.ico" .||. "files/**"     .||. "video/*.webm" .||.
+            "video/*.png" .||. "video/*.html" .||. "js/*") $ do
         route   idRoute
         compile copyFileCompiler
 

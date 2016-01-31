@@ -2,13 +2,65 @@
 title: Home
 ---
 
-<h2>Welcome</h2>
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="container">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+			</ol>
 
-<p>Welcome to my blog!</p>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<div class="jumbotron">
+						<h1>Stephen J. Barr</h1>
+						<h2>Machine Learning, Data Science, Optimization, Healthcare, Operations.</h2>
+						<p></p>
+						<p><a class="btn btn-primary btn-lg" href="#" role="button">You know you want to &raquo;</a></p>
+					</div>
+				</div>
+				<div class="item">
+				  <video src="./video/container_stevejb_video.webm" autoplay muted loop poster="./video/stevejb_container.png"></video>
+				  <!--<img src = "/video/stevejb_container.png">-->
+				</div>
+			</div>
 
-<p>I've reproduced a list of recent posts here for your reading pleasure:</p>
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	<div class="content-container">
+		<div class="content-holder left">
+			<div id="about">
+				<h1>About me</h1>
+				<img src="/images/avatar.jpg" alt="That's me!" width="100px"
+					style="float: right; margin: 18px" />
+				<p>
+					Hi! I am Stephen J. Barr. I have done some things.
+				</p>
+			</div>
+			<div id="recent-posts">
+				<h1 style="clear: left">Recent b&lambda;ogposts</h1>
+				$partial("templates/post-list.html")$
 
-<h2>Posts</h2>
-$partial("templates/post-list.html")$
-
-<p>…or you can find more in the <a href="/archive.html">archives</a>.</p>
+				<a type="application/rss+xml" href="/rss.xml"><img style="display: inline"
+						alt="rss feed" src="/images/rss.png" />
+						Feed</a>
+				&nbsp;
+				<a href="/posts.html">All posts...</a>
+				<p>
+					Browse: $tags$
+				</p>
+			</div>
+		</div>
+		<div class="right content-holder">
+			<div class="twitter-holder"></div>
+		</div>
+	</div>

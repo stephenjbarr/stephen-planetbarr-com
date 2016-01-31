@@ -1,0 +1,25 @@
+<div id="lightbox">
+    $for(photos)$
+    $if(nextPageNum)$
+        <a href="$nextPageUrl$"><img src="$url$" alt="Photo" /></a>
+    $else$
+        <a href="$firstPageUrl$"><img src="$url$" alt="Photo" /></a>
+    $endif$
+    $endfor$
+
+    <div class="pagination">
+        $if(previousPageNum)$
+            <a href="$previousPageUrl$">previous</a>
+        $else$
+            <a href="$lastPageUrl$">previous</a>
+        $endif$
+        &mdash;
+        $currentPageNum$ of $numPages$
+        &mdash;
+        $if(nextPageNum)$
+            <a href="$nextPageUrl$">next</a>
+        $else$
+            <a href="$firstPageUrl$">next</a>
+        $endif$
+    </div>
+</div>

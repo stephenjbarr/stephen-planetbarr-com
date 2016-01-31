@@ -1,8 +1,46 @@
-<div class="info">
-    Posted on $date$
-    $if(author)$
-        by $author$
-    $endif$
+<!-- <h1>$title$</h1> -->
+<!-- <div class="soft"> -->
+<!--     Posted in: $tags$. -->
+<!-- </div> -->
+<!-- $body$ -->
+
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+<div class="container container-post">
+  <h2>$title$</h2>
+  <h3>$date$</h3>
+  <div class="soft">
+    Posted in: $tags$.
+  </div>
+  $body$
+
 </div>
 
-$body$
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'stevejb1';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+<!-- <div id="disqus_thread"></div> -->
+<!-- <script type="text/javascript"> -->
+<!-- var disqus_identifier = '$url$'; -->
+<!-- var disqus_url = 'http://jaspervdj.be' + '$url$'; -->
+<!-- var disqus_title = '$title$'; -->
+<!-- (function() { -->
+<!-- var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true; -->
+<!-- dsq.src = 'http://jaspervdj.disqus.com/embed.js'; -->
+<!-- (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq); -->
+<!-- })(); -->
+<!-- </script> -->
+<!-- <noscript><p>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=jaspervdj">comments powered by Disqus.</a></p></noscript> -->
+

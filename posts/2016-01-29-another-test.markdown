@@ -1,5 +1,7 @@
 ---
 title: a second example post
+tags: example, haskell
+description: A second fucking example
 ---
 
 Fuck 

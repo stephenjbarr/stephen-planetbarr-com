@@ -15,8 +15,26 @@ A good review of the subject can be [[http://www.cs.umd.edu/srl-book/][seen in t
 The book is organized to show progress of the field from logic based solvers to probabilistic constructs such as Markov logic networks (MLNs).
 
 
-* Probabilistic Soft Logic
+* Probabilistic Soft Logic (PSL)
+
+PSL is developed by [[https://getoor.soe.ucsc.edu/][Lise Getoor]] (formerly at UMD, now at UC Santa Cruz) and others.
+Like Markov Logic Networks, the language of PSL are logical atoms and statements.
+However, unlike MLNs, PSL was designed with efficient inference in mind, as the truth values are "soft", \(\in [0,1]\).
+The result of this innovation is that, rather than grounding out possible \(\{0,1\}\) truths at a combinatorial scale, having soft truth values  \(\in [0,1]\) allows for the program to be cast as a convex optimization problem, which convential solvers can tackle.
+Additionally, using the method of [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.483.4732&rep=rep1&type=pdf][/alternating direction method of multipliers (ADMM)/]], one can take advantage of the particular sturcture of the problem to solver these problems more rapidly when compared to generic methods.
+
+** PSL Resources
+   1. [[https://lirias.kuleuven.be/handle/123456789/369430][A short introduction to probabilistic soft logic]]
+   2. [[http://psl.umiacs.umd.edu/][PSL Home page at UMD]]
+   3. [[https://github.com/linqs/psl][PSL Github]]
+   4. [[https://www.google.com/search?q=Inference+with+ADMM+is+fast%252C+scalable%252C+and+straightforward+to+implement&oq=Inference+with+ADMM+is+fast%252C+scalable%252C+and+straightforward+to+implement&aqs=chrome..69i57&sourceid=chrome&es_sm=122&ie=UTF-8][Some interesting PDFs]]
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GhBHRhIsQIE" frameborder="0" allowfullscreen></iframe>
+* General Resources
 
+  I found this [[https://www.youtube.com/watch?v=GhBHRhIsQIE][lecture by Raymond Mooney]], given at the [[http://allenai.org/][Allen AI Institute]], which mentions the relationship between MLN and PSL, to be very useful.
+  
+
+* Using PSL for Weird Al
+
+ 

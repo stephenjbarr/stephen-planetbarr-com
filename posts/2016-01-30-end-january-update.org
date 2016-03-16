@@ -20,8 +20,8 @@ The book is organized to show progress of the field from logic based solvers to 
 PSL is developed by [[https://getoor.soe.ucsc.edu/][Lise Getoor]] (formerly at UMD, now at UC Santa Cruz) and others.
 Like Markov Logic Networks, the language of PSL are logical atoms and statements.
 However, unlike MLNs, PSL was designed with efficient inference in mind, as the truth values are "soft", \(\in [0,1]\).
-The result of this innovation is that, rather than grounding out possible \(\{0,1\}\) truths at a combinatorial scale, having soft truth values  \(\in [0,1]\) allows for the program to be cast as a convex optimization problem, which convential solvers can tackle.
-Additionally, using the method of [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.483.4732&rep=rep1&type=pdf][/alternating direction method of multipliers (ADMM)/]], one can take advantage of the particular sturcture of the problem to solver these problems more rapidly when compared to generic methods.
+The result of this innovation is that, rather than grounding out possible \(\{0,1\}\) truths at a combinatorial scale, having soft truth values  \(\in [0,1]\) allows for the program to be cast as a convex optimization problem, which conventional solvers can tackle.
+Additionally, using the method of [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.483.4732&rep=rep1&type=pdf][/alternating direction method of multipliers (ADMM)/]], one can take advantage of the particular structure of the problem to solver these problems more rapidly when compared to generic methods.
 
 ** PSL Resources
    1. [[https://lirias.kuleuven.be/handle/123456789/369430][A short introduction to probabilistic soft logic]]
@@ -35,6 +35,6 @@ Additionally, using the method of [[http://citeseerx.ist.psu.edu/viewdoc/downloa
   I found this [[https://www.youtube.com/watch?v=GhBHRhIsQIE][lecture by Raymond Mooney]], given at the [[http://allenai.org/][Allen AI Institute]], which mentions the relationship between MLN and PSL, to be very useful.
   
 
-* Using PSL for Weird Al
 
- 
+
+  

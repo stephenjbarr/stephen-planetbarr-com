@@ -1,0 +1,22 @@
+
+
+* LaTeX / Beamer presentations
+
+  1. The main path is =(org-mode)->[Pandoc]->(beamer)=.     
+  2. Use [[https://github.com/gpoore/minted][minted]] to render code samples.
+     This is done using a [[https://github.com/nick-ulle/pandoc-minted][Pandoc filter]].
+  3. Theme: [[Using the ][metropolis]]
+  4. Citations: Using [[https://hackage.haskell.org/package/pandoc-citeproc][pandoc-citeproc]].
+
+
+** Tasks
+
+*** TODO Generate bibliography at the end of the presentation
+*** TODO Add section-wide TOC to template
+    http://tex.stackexchange.com/questions/26712/how-to-make-outline-frame-in-beamer
+
+
+     
+
+
+  

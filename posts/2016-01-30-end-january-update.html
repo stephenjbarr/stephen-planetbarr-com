@@ -19,6 +19,8 @@ The book is organized to show progress of the field from logic based solvers to 
 PSL is developed by <a href="https://getoor.soe.ucsc.edu/">Lise Getoor</a> (formerly at UMD, now at UC Santa Cruz) and others.
 Like Markov Logic Networks, the language of PSL are logical atoms and statements.
 However, unlike MLNs, PSL was designed with efficient inference in mind, as the truth values are "soft", \(\in [0,1]\).
+The result of this innovation is that, rather than grounding out possible \(\{0,1\}\) truths at a combinatorial scale, having soft truth values  \(\in [0,1]\) allows for the program to be cast as a convex optimization problem, which conventional solvers can tackle.
+Additionally, using the method of <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.483.4732&amp;rep=rep1&amp;type=pdf"><i>alternating direction method of multipliers (ADMM)</i></a>, one can take advantage of the particular structure of the problem to solver these problems more rapidly when compared to generic methods.
 </p>
 </div>
 
@@ -29,16 +31,18 @@ However, unlike MLNs, PSL was designed with efficient inference in mind, as the 
 <li><a href="https://lirias.kuleuven.be/handle/123456789/369430">A short introduction to probabilistic soft logic</a></li>
 <li><a href="http://psl.umiacs.umd.edu/">PSL Home page at UMD</a></li>
 <li><a href="https://github.com/linqs/psl">PSL Github</a></li>
+<li><a href="https://www.google.com/search?q=Inference+with+ADMM+is+fast%2C+scalable%2C+and+straightforward+to+implement&amp;oq=Inference+with+ADMM+is+fast%2C+scalable%2C+and+straightforward+to+implement&amp;aqs=chrome..69i57&amp;sourceid=chrome&amp;es_sm=122&amp;ie=UTF-8">Some interesting PDFs</a></li>
 </ol>
-
-
-
-
-
-
-<p>
-&lt;iframe width="560" height="315" src="<a href="https://www.youtube.com/embed/GhBHRhIsQIE">https://www.youtube.com/embed/GhBHRhIsQIE</a>" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-</p>
 </div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline4" class="outline-2">
+<h2 id="orgheadline4"><span class="section-number-2">3</span> General Resources</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+I found this <a href="https://www.youtube.com/watch?v=GhBHRhIsQIE">lecture by Raymond Mooney</a>, given at the <a href="http://allenai.org/">Allen AI Institute</a>, which mentions the relationship between MLN and PSL, to be very useful.
+</p>
 </div>
 </div>

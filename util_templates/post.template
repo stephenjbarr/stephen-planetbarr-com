@@ -1,0 +1,8 @@
+#+TITLE: {{ title }}
+#+AUTHOR: Stephen
+#+DATE: {{ date_ymd }}
+#+SEQ_TODO: TODO(t) STARTED(s) WAITING(w) DELEGATED(g) APPT(a) | DONE(d) DEFERRED(f) CANCELLED(c)
+#+HTML_DOCTYPE: html5
+#+OPTIONS: toc:nil   
+#+FILETAGS: {{ org_tags }}
+#+LATEX_CLASS: myfdparticle

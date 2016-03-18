@@ -1,4 +1,4 @@
-title: 
+title: {{ title }}
 date: {{ date_ymd }}
 description: {{ description }}
 tags: {{ tags_comma_sep }}

@@ -1,2 +1,4 @@
 :set -XOverloadedStrings
+:set -XScopedTypeVariables
+:set -XGeneralizedNewtypeDeriving
 import           Hakyll

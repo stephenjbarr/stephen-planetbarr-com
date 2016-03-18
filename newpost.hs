@@ -1,3 +1,4 @@
+{-# LANGUAGE OverloadedStrings, ScopedTypeVariables, GeneralizedNewtypeDeriving #-}
 -----------------------------------------------------------------------------
 -- |
 -- Module      :  newpost
@@ -14,15 +15,22 @@
 import Data.Time.Clock
 import Data.Time.Calendar
 import Data.Time.LocalTime
-import Data.Text
-import Data.Text.Format as F
+import Data.Text as T
+import Data.Text.Lazy.Builder as T
+import Data.Text.Format as T
+import qualified TextShow as TS (toText)
 
 -- https://hackage.haskell.org/package/text-0.11.2.3/docs/Data-Text-Lazy-Builder.html#t:Builder
--- let i :: Int = 32
--- λ> left 4 '0' i
 
-datePrefix :: (Integer, Int, Int) -> Text
-datePrefix = error "undefined"
+
+pad2 :: Int -> T.Text
+pad2 x =  TS.toText $ left 2 '0' x
+
+
+-- datePrefix :: (Integer, Int, Int) -> Text
+-- datePrefix (y_i, m_i, d_i) = intersperse 
+--   y = show y_i
+--   m      m_i 
 
 main = do
     putStrLn "New post!!!"

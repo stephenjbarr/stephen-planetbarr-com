@@ -225,10 +225,11 @@ main = hakyllWith config $ do
                 >>= relativizeUrls
   where
     pages =
-        [ "contact.html",
-          "bio.html",
-          "research/main.html"
+        [ "contact.html"
+        , "bio.html"
+        , "research/main.html"
         -- , "links.markdown"
+        , "pages/meta/meta.html"
         ]
 
     writeXeTex =

@@ -1,3 +1,12 @@
+#+TITLE: Meta, Media Generation
+#+AUTHOR: Stephen
+#+DATE: 2016-03-18
+#+SEQ_TODO: TODO(t) STARTED(s) WAITING(w) DELEGATED(g) APPT(a) | DONE(d) DEFERRED(f) CANCELLED(c)
+#+HTML_DOCTYPE: html5
+#+OPTIONS: toc:nil   
+#+FILETAGS: work:workflow:meta
+#+LATEX_CLASS: myfdparticle
+
 
 
 * LaTeX / Beamer presentations
@@ -5,7 +14,7 @@
   1. The main path is =(org-mode)->[Pandoc]->(beamer)=.     
   2. Use [[https://github.com/gpoore/minted][minted]] to render code samples.
      This is done using a [[https://github.com/nick-ulle/pandoc-minted][Pandoc filter]].
-  3. Theme: [[Using the ][metropolis]]
+  3. Theme: [[https://github.com/matze/mtheme][metropolis theme]]
   4. Citations: Using [[https://hackage.haskell.org/package/pandoc-citeproc][pandoc-citeproc]].
 
 
@@ -15,8 +24,5 @@
 *** TODO Add section-wide TOC to template
     http://tex.stackexchange.com/questions/26712/how-to-make-outline-frame-in-beamer
 
-
-     
-
-
-  
+*** DONE Create a =Makefile=
+    CLOSED: [2016-03-18 Fri 17:54]

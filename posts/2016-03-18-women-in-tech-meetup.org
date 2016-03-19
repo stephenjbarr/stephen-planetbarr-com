@@ -13,7 +13,7 @@
 
 
  #+CAPTION: LeaveLogic Presentation
- #+ATTR_HTML: :alt presentation image :title Action! :align right
+ #+ATTR_HTML: :alt presentation image :title Anna Steffeney, CEO of LeaveLogic :align right
  [[file:images/leavelogic_presented.jpg]]
 
 
